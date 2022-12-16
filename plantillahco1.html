@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="utf-8">
+	<title>hCo | Cats_d&d </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="plantilla">
+	<meta name="author" content="W&b - hCo">
+	
+	<!--<link rel="shortcut icon" href="images/favicon.ico">-->
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				//establezca la ruta a BnWWorker.js para una implementación ultrarrápida
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				//para las imágenes con un ancho y alto fluidos
+				responsive:true,
+				// to invert the hover effect
+				//para invertir el efecto de desplazamiento
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				//esta opción solo funciona en los navegadores modernos (en IE inferior a 9 siempre permanece 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut //esta propiedad también podría ser solo velocidad: valor para ambos fadeIn y fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+					// esta devolución de llamada se ejecuta cada vez que se convierte una imagen
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+<!--hco 3/11/22			<a href="index.html" ><span class="b1">w</span><span class="b2">h</span><span class="b3">i</span><span class="b4">t</span><span class="b5">e</span></a>
+						<a href="index.html" ><span class="b1">h</span><span class="b2">C</span><span class="b3">o</span><span class="b4"></span><span class="b5"></span></a>
+						<svg height="80" width="2000">-->
+						<svg>
+						<defs>
+							<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+							<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+							<stop offset="100%"	style="stop-color:rgb(255,0,0);stop-opacity:1" />
+							</linearGradient>
+							</defs>
+							<ellipse cx="80" cy="40" rx="70" ry="30" fill="url(#grad1)" />
+							<text fill="#ffffff" font-size="50" font-family="verdana" x="35" y="60">hCo</text>
+							Sorry, your browser does not support inline SVG.
+						</svg>
+					</div><!-- //LOGO -->
+										
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home" >Inicio</a></li>
+								<!--<li class="scroll_btn"><a href="#about" >Nosotros</a></li>-->
+								<li class="scroll_btn"><a href="#cleancode_block" >Nosotros</a></li>
+								<li class="scroll_btn"><a href="#projects" >Destacados</a></li>
+								<!--<li class="scroll_btn"><a href="#team" >Equipo</a></li>-->
+								<li class="scroll_btn"><a href="#news" >Opiniones</a></li>
+								<li class="scroll_btn last"><a href="#contacts" >Contactos</a></li>
+								<li class="sub-menu">
+									<a href="javascript:void(0);" >Mas</a>
+									<ul>
+										<li><a rel="nofollow noopener noreferrer" href="blog.html"           target="_blank">Blog</a></li>
+										<li><a rel="nofollow noopener noreferrer" href="blog-post.html"      target="_blank">Post</a></li>
+										<li><a rel="nofollow noopener noreferrer" href="portfolio-post.html" target="_blank">Mas</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MENU BLOCK -->
+		</header><!-- //HEADER -->
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">Diseño & Desarrollo</p>
+							<p class="title2 captionDelay4 FromTop">-hCo</p>
+							<p class="title3 captionDelay6 FromTop">-</p>
+							<p class="title4 captionDelay7 FromBottom">Paginas adecuadas para cualquier empresa y/o negocio con la calidad y velocidad de un buen sitio web .</p>
+						</div>
+					</li>
+					<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft">Sensible</p>
+							<p class="title2 captionDelay4 FromLeft">Diseño</p>
+							<p class="title3 captionDelay2 FromLeft">Optimizado</p>
+							<p class="title4 captionDelay7 FromBottom">Paginas adecuadas para cualquier empresa y/o negocio con la calidad y velocidad de un buen sitio web .</p>
+						</div>
+					</li>
+					<li class="slide3">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay1 FromBottom">Calidad en </p>
+							<p class="title2 captionDelay2 FromBottom"> Imagenes</p>
+							<p class="title3 captionDelay3 FromBottom">& Fotografias</p>
+							<p class="title4 captionDelay7 FromBottom">Paginas adecuadas para cualquier empresa y/o negocio con la calidad y velocidad de un buen sitio web .</p>
+						</div>
+					</li>
+
+					<li class="slide4">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay1 FromRight">Buen  </p>
+							<p class="title2 captionDelay2 FromRight"> equipo </p>
+							<p class="title3 captionDelay3 FromRight">para buen desarrollo</p>
+							<p class="title4 captionDelay7 FromBottom">Paginas adecuadas para cualquier empresa y/o negocio con la calidad y velocidad de un buen sitio web .</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/abstracta3.jpg" alt="" /></li>
+					<li><img src="images/slider/tecnologia1.jpg" alt="" /></li>
+					<li><img src="images/slider/img7.jpg" alt="" /></li>
+					<li><img src="images/slider/computador.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //TOP SLIDER -->		
+		</section><!-- //HOME -->
+	
+	
+		<!-- CODIGO-->
+		<section id="cleancode_block" class="padbot0">
+			<!-- CLEAN CODE -->
+			<div class="cleancode_block">
+				
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					<!-- CASTOM TAB -->
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active clearfix" id="tab1">
+<!--	3/11/22				<p class="title"><b>Clean</b> Code</p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>-->
+							<p class="title"><b>Codigo</b> Programable</p>
+							<span>Desarrollamos un producto de alta calidad, por que nuestro código es limpio y ordenado. </span>
+						</div>
+<!--	3/11/22			<div class="tab-pane fade clearfix" id="tab2">
+!--	3/11/22					<p class="title"><b>Technical</b> Support</p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>--
+							<p class="title"><b>Soporte </b> Tecnico</p>
+							<span>Resuelve problemas de tecnicos.</span>
+						</div>-->
+						<div class="tab-pane fade clearfix" id="tab3">
+<!--	3/11/22				<p class="title"><b>Responsive</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>-->
+							<p class="title"><b>Responsive</b></p>
+							<span>Para ser usado en diferentes equipos desde computadoras a celulares.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab4">
+<!--	3/11/22				<p class="title"><b>Documentation</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>-->
+							<p class="title"><b>Documentacion</b></p>
+							<span>Para que personalmente haga diferentes ajustes.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab5">
+<!--	3/11/22				<p class="title"><b>Quality</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>-->
+							<p class="title"><b>Calidad</b></p>
+							<span>Creamos un producto de muy alta calidad a bajos costos.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab6">
+<!--	3/11/22				<p class="title"><b>Support</b></p>
+							<span>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</span>-->
+							<p class="title"><b>Soporte</b></p>
+							<span>Para resolver sus inquietudes.</span>
+						</div>
+					</div>
+					<ul id="myTab" class="nav nav-tabs">
+<!--	3/11/22			<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>Clean Code</span></a></li>
+						<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>Support</span></a></li>
+						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Responsive</span></a></li>
+						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Documentation</span></a></li>
+						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span>Quality</span></a></li>
+						<li><a class="i6" href="#tab6" data-toggle="tab" ><i></i><span>Support</span></a></li>-->
+						<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>CodigoLimpio</span></a></li>
+						<!--<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>SoporteTecnico</span></a></li>-->
+						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Sensible</span></a></li>
+						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Documentacion</span></a></li>
+						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span>Calidad</span></a></li>
+						<li><a class="i6" href="#tab6" data-toggle="tab" ><i></i><span>Soporte</span></a></li>
+
+					</ul><!-- CASTOM TAB -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //CLEAN CODE -->
+		</section><!-- //CODIGO -->
+				
+		<!-- MULTIPROPOSITO --
+		<section id="multipro">
+		<!-- MULTI PURPOSE -->
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+<!--	3/11/22				<h2><b>Multi-purpose</b> WordPress Theme</h2>
+							<p>We tried to make very high-quality product and so our code is very neat and clean. Whatever anyone could improve and modify the template to your liking.</p>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+							<a class="btn btn-active" href="javascript:void(0);" ><span data-hover="Yes I want it">Byu This theme</span></a>
+							<a class="btn" href="javascript:void(0);" >View more templates</a>-->
+							<h2><b>Multi-proposito</b> Todos los temas </h2>
+							<p>Para todos los negocios sea cual sea su objetivo .</p>
+							<p>Estamos para escuchar y resolver su necesidad.</p>
+<!--	3/11/22				<a class="btn btn-active" href="javascript:void(0);" ><span data-hover="Si lo quiero">Leer este tema</span></a>
+							<a class="btn" href="javascript:void(0);" >Ver mas</a>-->
+						</div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/viajes.jpg" alt="" />
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MULTI PURPOSE -->
+		<!-- </section>-->
+		
+		<!-- PROJECTS -->
+		<section id="projects" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+<!--	3/11/22	<h2><b>Featured</b> Works</h2>-->
+				<h2><b>Destacados</b> </h2>
+			</div><!-- //CONTAINER -->
+			
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/espejo.jpg" alt="" />
+<!--	3/11/22					<a class="zoom" href="images/works/1.jpg" rel="prettyPhoto[portfolio1]" ></a>-->
+								<a class="zoom" href="images/works/espejo.jpg" ></a>
+							</div>
+<!--	3/11/22				<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ampliar</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>-->
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/iglesia1.jpg" alt="" />
+								<a class="zoom" href="images/works/iglesia1.jpg"></a>
+							</div>
+<!--	3/11/22				<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ampliar</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>-->
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/cucurucho.jpg" alt="" />
+								<a class="zoom" href="images/works/cucurucho.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+<!--	3/11/22				<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ampliar</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>-->
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/hamburguesa.jpg" alt="" />
+								<a class="zoom" href="images/works/hamburguesa.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+<!--	3/11/22				<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ampliar</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>-->
+						</div>
+					</div><!-- //work4 -->
+					
+					<!-- work5 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/slide1_bg.jpg" alt="" />
+								<a class="zoom" href="images/works/slide1_bg.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+<!--	3/11/22				<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ampliar</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>-->
+						</div>
+					</div><!-- //work5 -->
+					
+					<!-- work6 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/veterinaria5.jpg" alt="" />
+								<a class="zoom" href="images/works/veterinaria5.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+<!--	3/11/22				<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ver</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>-->
+						</div>
+					</div><!-- //work6 -->
+					
+					<!-- work7 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/ferreteria.jpg" alt="" />
+								<a class="zoom" href="images/works/ferreteria.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+<!--	3/11/22				<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ver</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>-->
+						</div>
+					</div><!-- //work7 -->
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+			
+			<!-- OUR CLIENTS --
+			<div class="our_clients">
+			
+				!-- CONTAINER --
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					!-- ROW --
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/1.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/2.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/3.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/4.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/5.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/6.jpg" alt="" />
+						</div>
+					</div>!-- //ROW --
+				</div>!-- CONTAINER --
+			</div>!-- //OUR CLIENTS -->
+		</section><!-- //PROJECTS -->
+	</div>
+</div>
+</body>
+</html>
